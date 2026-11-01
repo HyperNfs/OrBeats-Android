@@ -1,77 +1,111 @@
+<div align="center">
+
+<img src="icon.svg" width="112" height="112" alt="OrBeats logo">
+
 # OrBeats Android
 
-A standalone Android companion for **OrBeats on PS4**: discover BeatSaver maps, preview and download songs, and manage the existing OrBeats song pack from your phone.
+**Your OrBeats library. Now in your pocket.**
 
-**Android8+ · ARM64 · Native Android UI · No PC or runtime Termux/server required**
+Discover BeatSaver maps, build your library, and install custom songs on PS4—straight from your Android phone.
 
-Built on [Wkrotik's OrBeats](https://github.com/Wkrotik/OrBeats), reusing its conversion formats, console transactions and official plugin releases—not a replacement PS4 plugin. Original native/desktop documentation is preserved in [README-upstream.md](README-upstream.md).
+[![Download APK](https://img.shields.io/badge/Download_APK-v0.1.9-ABE28F?style=for-the-badge&logo=android&logoColor=101813&labelColor=26382C)](https://github.com/HyperNfs/OrBeats-Android/releases/download/v0.1.9/OrBeats-0.1.9.apk)
+[![Android](https://img.shields.io/badge/Android-8%2B_%C2%B7_ARM64-26382C?style=for-the-badge)](#get-started)
+[![License](https://img.shields.io/badge/License-GPL--3.0-26382C?style=for-the-badge)](LICENSE)
 
-## What it does
+[Get started](#get-started) · [Audio quality](#audio-quality) · [Map support](#map-support) · [Releases](https://github.com/HyperNfs/OrBeats-Android/releases) · [Source](android/)
 
-- Browse/search BeatSaver by **song name or exact map ID**; preview songs, view ratings/difficulties/download size, and save ZIPs to the phone library.
-- Separate **On PS4 / On phone** libraries, with real indexed PS4 cover art and endpoint-specific cached snapshots.
-- Mark known Noodle/Mapping Extensions incompatibilities red with reasons. **Unmarked does not mean guaranteed compatible**: the converter still validates downloaded charts/features.
-- Prepare supported V2/V3/V4 maps and install a confirmed new song into the **existing OrBeats pack**, preserving older entries and OST/DLC. Requires the matching PS4 title/plugin/features and a legal conversion template; an existing verified song can provide one automatically.
-- Choose **Original, Balanced or Small** audio quality. Original preserves eligible Vorbis packets without another lossy encode; smaller modes intentionally re-encode. Unsupported original profiles retain an honest PCM fallback, never bypass validation.
-- Confirm removal of an indexed PS4 song separately from deleting a phone ZIP. Last-song removal retains its conversion template.
-- Two separate Settings actions fetch/install/enable the **official main plugin or Extras** from Wkrotik/OrBeats GitHub releases, validating release manifest/hash/size/FSELF/version and preserving unrelated `plugins.ini` entries.
-- Light/dark themes, springy buttons, open-source notices and an in-app console-linking tutorial.
+<sub>A standalone Android companion for <a href="https://github.com/Wkrotik/OrBeats">Wkrotik's OrBeats</a>. No PC, runtime Termux or localhost server required to use the app.</sub>
 
-## Audio sizes in 0.1.9
+</div>
 
-Actual Android APK conversion of the same159.64-second BeatSaver map (`25c63`), including its cover/menu preview:
+## Your next session, from your phone
 
-| Quality | Song bundle | Bundle + menu files |
-| --- | ---: | ---: |
-| Original | 8.11 MB | 10.50 MB |
-| Balanced — lossy | 2.87 MB | 5.26 MB |
-| Small — lossy | 2.20 MB | 4.58 MB |
+- **Find your next map** with BeatSaver name or ID search, song previews, ratings and difficulty details.
+- **Keep both libraries in view** with separate **On phone** and **On PS4** lists, real PS4 covers and cached catalog snapshots.
+- **Choose your audio quality**: keep the original quality or trade some fidelity for smaller installs.
+- **Manage your songs** with confirmed PS4 installation and removal, separate from deleting a phone download.
+- **Install the official plugins** using separate **OrBeats** and **Extras** buttons, including `plugins.ini` registration.
+- **Keep the originals**: custom songs stay in their own **OrBeats** pack alongside the stock soundtrack and DLC.
+- **Make it yours** with light and dark themes, springy buttons and an in-app setup guide.
 
-The older Android PCM bundle alone was28.33MB. These measurements are **one map, not universal size caps, fixed bitrates or measured installation-time guarantees**. Existing entries are not automatically recompressed/replaced. Choose quality before adding a new song.
+## Get started
 
-Map details reports the **BeatSaver ZIP download size**, not installed size. If the CDN does not provide a size header and the ZIP is not on the phone yet, it says unavailable instead of downloading the entire file or guessing.
+You need **Android 8+ on an ARM64 phone**, plus **Beat Saber CUSA12878, patch 2.04**, on a PS4 with **GoldHEN plugin support and FTP enabled**. Other game builds are not supported.
 
-## Connecting safely
+1. [Download the APK](https://github.com/HyperNfs/OrBeats-Android/releases/download/v0.1.9/OrBeats-0.1.9.apk) and install it. **Updating? Install over your current version—don't uninstall or clear app data.**
+2. Connect your phone and PS4 to the same trusted LAN. Enter the console's FTP address and port in **Settings**; the **?** button explains the connection steps.
+3. Check your PS4 library. Use the separate official **OrBeats / Extras** install-update buttons if needed, then choose your preferred audio quality.
+4. Download a map, open **Library → On phone → Install to PS4**, and confirm the target. After success, launch Beat Saber and open the **OrBeats** pack.
 
-1. Update the APK **in place** to keep downloads/preferences/recovery. Do not uninstall or clear app data for a normal update.
-2. Use GoldHEN FTP on a **trusted private LAN** and set the console address/port in Settings. Anonymous FTP is unencrypted; do not expose it to the internet.
-3. Read the catalog first. Fully close Beat Saber before any install/removal/plugin change, and confirm the target/action in the app.
-4. Keep the app open until the operation finishes; restart the game after success. Do not use another companion concurrently.
-5. If an operation reports recovery/lock/rollback state, stop and inspect it. **Never blindly delete locks, clear app data or retry around the guard.**
+**First-time setup:** FTP alone is not enough. Conversion needs a legal, compatible template; an existing verified OrBeats song can supply one automatically. An empty setup still needs a legally obtained template. No game assets or templates are bundled.
 
-Transactions retain snapshot checks, a writer lock, staged immutable uploads, full readback, durable recovery and index-last publication. Removal excludes the song from the index before deleting its exact files. Validation is not skipped for speed.
+> **Fully close Beat Saber before installing, removing songs or updating plugins.** Keep the app open until completion; don't run another companion at the same time. FTP is unencrypted—keep it on a trusted private LAN. If recovery or lock checks block an operation, stop and inspect it; don't blindly delete locks or clear app data.
 
-No songs, game-derived templates/assets or private signing keys are included. An empty installation still needs a legally obtained compatible template. Plugin buttons use the official upstream releases; unknown binaries/configuration states are refused.
+## Audio quality
 
-## Status and testing
+Choose **Settings → Audio quality** before preparing or installing a new song.
 
-Download the signed **[OrBeats Android 0.1.9 release](https://github.com/HyperNfs/OrBeats-Android/releases/tag/v0.1.9)**. Install `OrBeats-0.1.9.apk` over your existing Android version; corresponding sources, dependency notices and SHA256 checksums are included. Do not confuse upstream desktop packages with the Android app.
+| Mode | What it does | Example size¹ |
+| --- | --- | ---: |
+| **Original** · default | Preserves eligible Vorbis audio without another lossy encode. | **10.50 MB** |
+| **Balanced** | Lossy Vorbis encoding for a smaller file with a quality/size trade-off. | **5.26 MB** |
+| **Small** | More aggressive lossy encoding to prioritize file size. | **4.58 MB** |
 
-- Host/parser/archive/header tests, package/signature/source-pin checks and16KiB native ELF checks pass.
-- The actual APK's DEX/assets/AndroidPlatform/JNI passes V2/V3/V4 and real-map preparation, original44100/48000 Vorbis validation, selected-quality conversion, cover checks and Java bridges.
-- Console installation/removal/plugin failure and rollback tests use **socket-forbidden simulated FTP**. They are not hardware proof.
-- Earlier0.1.7 PCM installation/playback was user-confirmed. **New compressed PS4 playback, end-to-end timing and the updated installed UI remain hardware/visual test gates.**
+<sub>¹ Actual Android conversion of the same 159.64-second map, <code>25c63</code>, including cover and menu preview. The older PCM song bundle alone was 28.33 MB. Sizes vary by song; these are not fixed bitrates, universal caps or whole-install speed guarantees.</sub>
 
-See [Android README](android/README.md), [build/evidence notes](android/BUILD.txt) and [installed-device checklist](android/UI-CHECKLIST.md).
+Downloaded ZIPs stay untouched. Existing PS4 songs aren't automatically recompressed or replaced. Unsupported original audio profiles may still use the larger PCM fallback; validation isn't skipped to force compression.
 
-## Source and building
+**Download size ≠ installed size.** Map details shows the BeatSaver ZIP size when the local file or CDN header provides it; otherwise it says unavailable.
 
-Android code, tests, build recipes, pinned dependency manifest and original corresponding sources live in [`android/`](android/). The original OrBeats source/history is retained at the repository root.
+## Map support
+
+OrBeats Android converts supported vanilla **V2, V3 and V4** maps using the existing OrBeats pipeline. The matching plugin supports **up to 64 custom songs**; actual support depends on its negotiated capabilities.
+
+**Chroma, Noodle Extensions, Mapping Extensions and custom environments are not supported.** Known incompatibilities are marked red with a reason, but an unmarked map is **not** guaranteed compatible—the downloaded charts still undergo strict checks. Unsupported features aren't silently stripped.
+
+## Documentation
+
+- [Android features, setup notes and build instructions](android/README.md)
+- [Release notes, APK, sources and checksums](https://github.com/HyperNfs/OrBeats-Android/releases/tag/v0.1.9)
+- [Build evidence and limitations](android/BUILD.txt) · [Device-test checklist](android/UI-CHECKLIST.md)
+- [Original OrBeats desktop and PS4 documentation](README-upstream.md)
+- [Report an Android bug or request a feature](https://github.com/HyperNfs/OrBeats-Android/issues)
+
+<details>
+<summary><strong>Testing, safety and building from source</strong></summary>
+
+### What has been checked
+
+- Host/parser/archive/header tests, package/signature/source-pin checks and 16 KiB native ELF alignment.
+- Actual APK DEX/assets/AndroidPlatform/JNI conversion, including real maps, original 44.1/48 kHz Vorbis, selected audio quality, cover validation and Java bridges.
+- Installation, removal, plugin deployment and rollback with **socket-forbidden simulated FTP**—not hardware proof. No console files were changed by the assistant during development.
+
+Earlier **0.1.7 PCM installation/playback** was user-confirmed. **New compressed PS4 playback, whole-install timing and the updated installed UI still need hardware/visual testing.**
+
+### Console safeguards
+
+Explicit confirmations, closed-game checks, snapshot checks, writer locks, full readback and durable recovery remain in place. Installs publish the index last; removal excludes the song from the index before deleting its exact files and retains the last template. Official plugin artifacts are checked for release hash, size, format and version; unrelated configuration is preserved.
+
+### Build the Android app
+
+Android source and pinned dependencies live in [`android/`](android/). The original OrBeats source and history remain at the repository root.
 
 ```sh
 cd android
-# Requires a provisioned ARM64 Termux Android/JDK toolchain described in README.md.
-python tools/package_runtime.py --fetch  # explicit private, hash-verified dependency staging
+# Requires the provisioned ARM64 Termux/JDK/Android build toolchain.
+python tools/package_runtime.py --fetch
 bash build.sh
 python development/conversion/runtime_apk_check.py
 ```
 
-The runtime harness uses a developer simulated Application context; it does not install the Activity or prove console playback. Song/template/plugin test fixtures are deliberately not distributed. The app itself bundles its runtime and does not depend on Termux or a localhost service.
+See the [Android README](android/README.md) for prerequisites. The runtime harness uses a simulated Application context, not an installed Activity. Private song/template/plugin fixtures are not distributed. Termux is a **build environment**, not an app runtime requirement.
 
-## Credits and licensing
+</details>
 
-- **Wkrotik / OrBeats**: original PS4 plugin, formats, converter, safe transactions and official release pipeline, GPL-3.0.
-- **BeatSaver**: map API and community content; map authors retain their rights.
-- Official **Chaquopy** Android Python runtime; **UnityPy**, **fsb5**, native Xiph audio libraries, SoundFile/libsoxr and other dependencies retain their original licenses and notices.
+## Credits and license
 
-See [LICENSE](LICENSE), [Android license](android/LICENSE), [`runtime-lock.json`](android/runtime-lock.json) and the release `NOTICES.txt`/corresponding source archives. This is an independent companion, not affiliated with Beat Games, Meta or Sony.
+Android adaptation maintained by **HyperNfs**, built on **[OrBeats by Wkrotik](https://github.com/Wkrotik/OrBeats)** and its existing PS4 plugin, converter and safe transaction pipeline—not a replacement plugin. Original OrBeats builds on [Beat Saber Deluxe by Chris Primeish and contributors](https://github.com/free5ty1e/BeatSaberPcCustomSongToPs4InstallConverter).
+
+Thanks to BeatSaver and its map creators, GoldHEN, OpenOrbis, Chaquopy, UnityPy, fsb5, SoundFile/libsoxr and the Xiph projects. Dependencies retain their own licenses; see [GPL-3.0](LICENSE), the [Android license](android/LICENSE), [dependency manifest](android/runtime-lock.json) and release notices/corresponding sources.
+
+Not affiliated with Beat Games, Meta or Sony. No music, game files, DLC, templates or private signing keys are distributed; song creators retain the rights to their work.
