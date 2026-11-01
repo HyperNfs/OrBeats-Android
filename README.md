@@ -2,9 +2,9 @@
 
 <img src="icon.svg" width="112" height="112" alt="OrBeats logo">
 
-# OrBeats
+# OrBeats - Android
 
-**Custom songs for Beat Saber on PS4.**
+**Custom songs for Beat Saber on PS4, Now on Android!**
 
 Browse BeatSaver, build your library, and play without replacing the original soundtrack or DLC.
 
