@@ -1,0 +1,47 @@
+OrBeats Android 0.1.9 — local signed release
+=========================================
+Package dev.orbeats.android, versionCode10, Android8+/API26, target35, ARM64.
+APK: OrBeats-0.1.9.apk, 24,117,428 bytes
+SHA256: 2556069b3af974917e831af46455f3724bcb8d92bc30975645d5f059a20da48d
+Certificate SHA256: ada2a7d3ceb351cec644c0fa3fd86c9b58c0a329b2eb7c5d8722a154af68b2b9
+Update in place. Do NOT uninstall/clear app data: it contains downloads/preferences and transaction recovery.
+
+Changes
+-------
+- Original eligible Vorbis44100/48000 packets in FSB5, preserving source quality; strict codebook/seek/independent decode/normalized-PCM checks. Unsupported sources/profiles retain honest PCM fallback; selected-validation failures remain fatal.
+- Settings Audio quality: Original(default), Balanced, Small. Smaller modes are lossy native Vorbis encodes; duration/PCM/bundle checks remain. Quality enters preparation cache identity and is captured at install confirmation. Source ZIP/chart/score identity unchanged; existing PS4 entries are NOT recompressed/replaced automatically.
+- Explicit persisted Name/ID search selector (25975 direct lookup); Name keeps pagination.
+- PS4 cover art via indexed bounded size/FNV/path validation, endpoint-specific32-memory/64-disk thumbnail cache. Read-only covers may load during gameplay; mutations still require closed game.
+- Map details download ZIP size: exact local file or bounded trusted HEAD. Unavailable when server refuses/misses header. Never download ZIP body just to measure; never label ZIP size as installed size.
+- Shared buttons/icons/navigation and dialog action buttons have springy press-release motion, including Settings. Accepted UI/layout/light mode/preview semantics preserved.
+
+Measured local real25c63 (159.6363492063492s, Hard223/Expert475/ExpertPlus685)
+---------------------------------------------------------------------------
+Original: bundle8,111,012B, bundle+menu10,497,506B.
+Balanced: bundle2,873,367B, bundle+menu5,259,861B.
+Small:    bundle2,195,585B, bundle+menu4,582,079B.
+Old PCM bundle28,334,774B. These are one-map actual Android APK/JNI conversion measurements, NOT universal caps, exact bitrate promises, PS4 playback or whole-install timing proof. Preview/cover remain original menu formats. Original ZIP unchanged.
+
+Checks and remaining hardware gates
+----------------------------------
+- Build/host/static/signature/16KiB native ELF/source-pin checks pass. Additional tests after main build:91 Core header/parser/archive boundaries,14 SongLoader checks; ConsoleLibrary11 and Preview21 unchanged. tests.log contains both runs. All21 original pinned OrBeats Python files and five fsb5 sources byte-unmodified; native FNV parity intact.
+- runtime-check.log: actual APK DEX/assets/AndroidPlatform/JNI, aliased cache, V2/V3/V4/real25c63, original44100/48000 compressed bundles, corrupt/wrong-PCM refusal, selected quality/cache/source preservation, Java prepare/Small-install bridges, covers, management/refusals/rollback/capability-last with socket-forbidden simulated FTP.
+- Live API search and25975 lookup passed. Live25c63 HEAD returned404: explicitly unavailable, not claimed passed. Fake HTTPS tests cover real header handling, no body reads, absent/large headers and refused redirects/statuses.
+- real-quality-check.log: exact released APK prepares real25c63 at Balanced/Small. No console connections/writes.
+- NOT tested: installed Activity/visual motion/selector/covers/size UI, compressed PS4 playback, whole-install timing, new removal/plugin hardware operations. Prior0.1.7 PCM installation/playback was user-confirmed, not evidence for new compressed modes.
+
+Safe console behavior
+---------------------
+Preserve closed-game/plugin/capability/features/valid-index/recovery checks, snapshot CAS, own lock, immutable staged uploads+full readback, index LAST, durable files/console-recovery backups. Removal publishes exclusion FIRST, retains last legal template, cleans only exact own files. Official main/Extras downloads validate official GitHub manifest/hash/size/FSELF/version; preserve unrelated INI entries/features/library, capability LAST. Unknown/recovery states are refused; never auto-clear locks or weaken native hook guards. Anonymous FTP is trusted-LAN-only/unencrypted. No assistant console writes during development. No songs/templates/private fixtures/game assets/keys ship.
+
+Reproduce on Termux
+-------------------
+See README.md and runtime-lock.json in OrBeats-0.1.9-source.zip.
+Private prerequisites: $HOME/.cache/orbeats-android-tools (JDK21/aapt/D8/Android35).
+First explicit dependency fetch: python tools/package_runtime.py --fetch
+Build: bash build.sh   (optional --live only for public BeatSaver API check)
+APK runtime harness: python development/conversion/runtime_apk_check.py
+Private legal song/template/release fixtures are optional developer inputs, never release assets. Harness is simulated Application context, not installed Activity. Source layout orbeats_pipeline/tools/development/scripts must remain because upstream ROOT uses parents[2]. No runtime Termux/server, new global install or proprietary FMOD.
+GPL3 OrBeats pin098897736e089107704ec1633daff8922087fcc8. MIT fsb5-1.0 source/notice pinned to same upstream provenance. Original codec sources/recipes/locks in native-audio-sources.zip; fsb5 original archive/license in Android source ZIP. All dependencies/notices in NOTICES.txt.
+Signing key stays private; never regenerate/share it or copy it into archives.
+GitHub Android README/source can be prepared locally; push/tag/GitHub Release still require separate explicit approval. All earlier release archives remain immutable.

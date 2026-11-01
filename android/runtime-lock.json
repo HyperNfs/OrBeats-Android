@@ -1,0 +1,313 @@
+[
+  {
+    "kind": "java",
+    "file": "chaquopy-integration/chaquopy_java-17.2.0.jar",
+    "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/chaquopy_java/17.2.0/chaquopy_java-17.2.0.jar",
+    "sha256": "9cf6f66ba74f89e334f9da3ffade49cfd3f48ed06030557299087216d7054c35"
+  },
+  {
+    "kind": "bootstrap",
+    "file": "chaquopy-integration/bootstrap-17.2.0-3.13.imy",
+    "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/bootstrap/17.2.0/bootstrap-17.2.0-3.13.imy",
+    "sha256": "7f9baf492f6f55ffaf92de492e239b7d4e8e5ca7a0ab3a07698a35f413495276"
+  },
+  {
+    "kind": "jni",
+    "file": "chaquopy-integration/libchaquopy_java-17.2.0-3.13-arm64-v8a.so",
+    "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/libchaquopy_java/17.2.0/libchaquopy_java-17.2.0-3.13-arm64-v8a.so",
+    "sha256": "afc927a07bb62edd108315ed062fe5276029e7bebe692465fa95ae17fff1e3a2"
+  },
+  {
+    "kind": "module",
+    "file": "chaquopy-integration/chaquopy-17.2.0-3.13-arm64-v8a.so",
+    "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/chaquopy/17.2.0/chaquopy-17.2.0-3.13-arm64-v8a.so",
+    "sha256": "24fdece46f44d5a0037191235d33f700d65cd6761742b747dd7594c5bc0924ad"
+  },
+  {
+    "kind": "target",
+    "file": "android-python/target-3.13.16-0-arm64-v8a.zip",
+    "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/target/3.13.16-0/target-3.13.16-0-arm64-v8a.zip",
+    "sha256": "fae8cfd4d3910b6f978b22279fe820c0c6ba49d0ea20f7b106aa6130f1c8f355"
+  },
+  {
+    "kind": "stdlib",
+    "file": "android-python/target-3.13.16-0-stdlib.zip",
+    "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/target/3.13.16-0/target-3.13.16-0-stdlib.zip",
+    "sha256": "68e3f71e6e2f2a2febb22f2d3575657787b3dd94f07d2c6f3780461babbcbf58"
+  },
+  {
+    "kind": "unity",
+    "file": "android-python/unitypy-1.20.26.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/23/07/b60c7f14d02703ffe2f45214406bf06432b5177c0726337798d142b6448b/unitypy-1.20.26.tar.gz",
+    "sha256": "00f6e613f9ec8d9697890fb78b4021ec68bead43ef33d16d21adb28bb457f7a9"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/attrs-26.1.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+    "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/fsspec-2026.9.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl",
+    "sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/lz4-4.3.3-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/lz4/lz4-4.3.3-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "sha256": "915b9c461bd7a266e202b11360955f8b981ff9e16ad2a65cb7ea4cd2bd3b0d71"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/Brotli-1.1.0-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/brotli/Brotli-1.1.0-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "sha256": "e70422134ff6c4b4989e9cbf04c77a13f1cf270d3b856aa85de19ba2a775665b"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/wheels/chaquopy_libjpeg-1.5.3-1-py3-none-android_21_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/chaquopy-libjpeg/chaquopy_libjpeg-1.5.3-1-py3-none-android_21_arm64_v8a.whl",
+    "sha256": "5555be57a2633fb5a3c0c810e89c8b705c471e3dabd95aa596fc7fdd48322728"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/wheels/pillow-11.0.0-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/pillow/pillow-11.0.0-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "sha256": "0d380685ae11d55ab6ac8152b1eb79999913c458f412fa50d7cc9157558bd174"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/CHAQUOPY.txt",
+    "url": "https://raw.githubusercontent.com/chaquo/chaquopy/1f63c93d8beaf7062fbe51888ab9235475df3bb8/LICENSE.txt",
+    "sha256": "345a9fdfeed355d37b18569ef277ba56eb0ab7c0b17a08a90163ce8d33d2b862"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/PYELFTOOLS.txt",
+    "url": "https://raw.githubusercontent.com/chaquo/chaquopy/1f63c93d8beaf7062fbe51888ab9235475df3bb8/product/runtime/src/main/python/java/_vendor/pyelftools-0.26.dist-info/LICENSE.txt",
+    "sha256": "ae18bf4cb82f92af7547259177bc28bc48e4fc732518bcedfe690226288d3445"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/SETUPTOOLS.txt",
+    "url": "https://raw.githubusercontent.com/chaquo/chaquopy/1f63c93d8beaf7062fbe51888ab9235475df3bb8/product/runtime/src/main/python/setuptools-68.2.2.dist-info/LICENSE",
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/CERTIFI.txt",
+    "url": "https://raw.githubusercontent.com/chaquo/chaquopy/1f63c93d8beaf7062fbe51888ab9235475df3bb8/product/gradle-plugin/src/main/python/pip/_vendor/certifi/LICENSE",
+    "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+  },
+  {
+    "kind": "cacert",
+    "file": "chaquopy-integration/notices/cacert.pem",
+    "url": "https://raw.githubusercontent.com/chaquo/chaquopy/1f63c93d8beaf7062fbe51888ab9235475df3bb8/product/gradle-plugin/src/main/resources/com/chaquo/python/cacert.pem",
+    "sha256": "2ef52ad56b4803e264045c915e55c236cbfa045b84b81efefc218a19eb44bd2b"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/CPYTHON.txt",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.13.16/LICENSE",
+    "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/EXPAT.txt",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.13.16/Modules/expat/COPYING",
+    "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/LIBFFI.txt",
+    "url": "https://raw.githubusercontent.com/libffi/libffi/v3.4.4/LICENSE",
+    "sha256": "2c9c2acb9743e6b007b91350475308aee44691d96aa20eacef8e199988c8c388"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/BZIP2.txt",
+    "url": "https://raw.githubusercontent.com/libarchive/bzip2/bzip2-1.0.8/LICENSE",
+    "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/XZ.txt",
+    "url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.4.6/COPYING",
+    "sha256": "29a1e305b2e34eefe5d4602d00cde1d528b71c5d9f2eec5106972cf6ddb6f73f"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/OPENSSL.txt",
+    "url": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.5.9/LICENSE.txt",
+    "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/LIBMPDEC-SOURCE.txt",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.13.16/Modules/_decimal/libmpdec/mpdecimal.h",
+    "sha256": "ea0b9c6b296c13aed6ecaa50b463e39a9c1bdc059b84f50507fd8247b2e660f9"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/MIMALLOC-SOURCE.txt",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.13.16/Objects/mimalloc/alloc.c",
+    "sha256": "3a44229c5f62b32467aa899423e751138d585387a9a894cf1b69ef16d2f261c9"
+  },
+  {
+    "kind": "license",
+    "file": "chaquopy-integration/notices/MIMALLOC.txt",
+    "url": "https://raw.githubusercontent.com/microsoft/mimalloc/v2.1.7/LICENSE",
+    "sha256": "19c99805e7a44a34b297a75d1edea9985e300066dfc024d5c99d4236d4573b5d"
+  },
+  {
+    "kind": "vendor-license-wheel",
+    "file": "chaquopy-integration/packaging-23.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/ab/c3/57f0601a2d4fe15de7a553c00adbc901425661bf048f2a22dfc500caf121/packaging-23.1-py3-none-any.whl",
+    "sha256": "994793af429502c4ea2ebf6bf664629d07c1a9fe974af92966e4b8d2df7edc61"
+  },
+  {
+    "kind": "vendor-license-wheel",
+    "file": "chaquopy-integration/platformdirs-2.6.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/c1/c7/9be9d651b93efce682b45142a6267034fc4215972780748618c02e236361/platformdirs-2.6.2-py3-none-any.whl",
+    "sha256": "83c8f6d04389165de7c9b6f0c682439697887bca0aa2f1c87ef1826be3584490"
+  },
+  {
+    "kind": "vendor-license-wheel",
+    "file": "chaquopy-integration/typing_extensions-4.4.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/0b/8e/f1a0a5a76cfef77e1eb6004cb49e5f8d72634da638420b9ea492ce8305e8/typing_extensions-4.4.0-py3-none-any.whl",
+    "sha256": "16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"
+  },
+  {
+    "kind": "vendor-license-wheel",
+    "file": "chaquopy-integration/jaraco.text-3.7.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/8f/09/4191f173aa71afaebbbb5560e9b8d0a2c4a8a0554765431e87fe5435011e/jaraco.text-3.7.0-py3-none-any.whl",
+    "sha256": "17b43aa0bd46e97c368ccd8a4c8fef2719ca121b6d39ce4be9d9e0143832479a"
+  },
+  {
+    "kind": "vendor-license-wheel",
+    "file": "chaquopy-integration/importlib_resources-5.10.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/be/0f/bd3e7fa47cc43276051c557d3b2fe946664781d2ecf08b05d074e1a3ee59/importlib_resources-5.10.2-py3-none-any.whl",
+    "sha256": "7d543798b0beca10b6a01ac7cafda9f822c54db9e8376a6bf57e0cbd74d486b6"
+  },
+  {
+    "kind": "vendor-license-wheel",
+    "file": "chaquopy-integration/zipp-3.7.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/52/c5/df7953fe6065185af5956265e3b16f13c2826c2b1ba23d43154f3af453bc/zipp-3.7.0-py3-none-any.whl",
+    "sha256": "b47250dd24f92b7dd6a0a8fc5244da14608f3ca90a5efcd37a3b1642fac9a375"
+  },
+  {
+    "kind": "vendor-license-wheel",
+    "file": "chaquopy-integration/more_itertools-9.1.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/85/01/e2678ee4e0d7eed4fd6be9e5b043fff9d22d245d06c8c91def8ced664189/more_itertools-9.1.0-py3-none-any.whl",
+    "sha256": "d2bc7f02446e86a68911e58ded76d6561eea00cddfb2a91e7019bbb586c799f3"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/audio-wheels/cffi-1.17.1-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "sha256": "09dc4a8ee1e51fec0d130421c40f19f74997fadd2144355585efa4436737b6aa"
+  },
+  {
+    "kind": "audio-source",
+    "name": "ogg",
+    "file": "audio-modern/ogg.tar.gz",
+    "url": "https://codeload.github.com/xiph/ogg/tar.gz/refs/tags/v1.3.6",
+    "sha256": "95b643da661155d79db9de2fca55daed3a8d491039829def246aacb3d9201c81"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/audio-wheels/chaquopy_libcxx-180000-0-py3-none-android_24_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_arm64_v8a.whl",
+    "sha256": "811547210b01eefb0fb850fd35bd27b53a00a76b9466b8c03e049b7e8175004b"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/audio-wheels/chaquopy_libffi-3.3-3-py3-none-android_24_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/chaquopy-libffi/chaquopy_libffi-3.3-3-py3-none-android_24_arm64_v8a.whl",
+    "sha256": "86873c2f8e5e43b07b72233bf35e06ad8dae41ba98e0556202d61d00d7ad952f"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/audio-wheels/chaquopy_libgfortran-4.9-0-py3-none-android_21_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_arm64_v8a.whl",
+    "sha256": "0b4caed1147f2a19707d4ba730afea57f7b8f2d8c046d8a48cf49377741c4604"
+  },
+  {
+    "kind": "audio-source",
+    "name": "vorbis",
+    "file": "audio-modern/vorbis.tar.gz",
+    "url": "https://codeload.github.com/xiph/vorbis/tar.gz/refs/tags/v1.3.7",
+    "sha256": "270c76933d0934e42c5ee0a54a36280e2d87af1de3cc3e584806357e237afd13"
+  },
+  {
+    "kind": "audio-source",
+    "name": "flac",
+    "file": "audio-modern/flac.tar.gz",
+    "url": "https://codeload.github.com/xiph/flac/tar.gz/refs/tags/1.5.0",
+    "sha256": "aea54ed186ad07a34750399cb27fc216a2b62d0ffcd6dc2e3064a3518c3146f8"
+  },
+  {
+    "kind": "audio-source",
+    "name": "opus",
+    "file": "audio-modern/opus.tar.gz",
+    "url": "https://codeload.github.com/xiph/opus/tar.gz/refs/tags/v1.5.2",
+    "sha256": "9480e329e989f70d69886ded470c7f8cfe6c0667cc4196d4837ac9e668fb7404"
+  },
+  {
+    "kind": "audio-source",
+    "name": "sndfile",
+    "file": "audio-modern/sndfile.tar.gz",
+    "url": "https://codeload.github.com/libsndfile/libsndfile/tar.gz/refs/tags/1.2.2",
+    "sha256": "ffe12ef8add3eaca876f04087734e6e8e029350082f3251f565fa9da55b52121"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/audio-wheels/chaquopy_openblas-0.2.20-5-py3-none-android_21_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_arm64_v8a.whl",
+    "sha256": "1e8e67a4f9e2fcde384890678bafbf7ffefe7b2cb4887e5c2996ba7607f4324c"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/audio-wheels/numpy-1.26.2-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/numpy/numpy-1.26.2-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "sha256": "05db9adc14aa49f075a5ea5c59559c361e54efd926f321eddd3b37e2fd05b721"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/audio-wheels/pycparser-3.12-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/b6/ae/315bbeee126a769cbde43cf4908acb4b40408d8bf8bbf334dd7368d8dadf/pycparser-3.12-py3-none-any.whl",
+    "sha256": "a076f3f489b39b43ed13563a1dafe42447445bec2e294154ec5c57fcdda4c85e"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/audio-wheels/soundfile-0.13.1-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/64/28/e2a36573ccbcf3d57c00626a21fe51989380636e821b341d36ccca0c1c3a/soundfile-0.13.1-py2.py3-none-any.whl",
+    "sha256": "a23c717560da2cf4c7b5ae1142514e0fd82d6bbd9dfc93a50423447142f2c445"
+  },
+  {
+    "kind": "wheel",
+    "file": "android-python/audio-wheels/soxr-0.4.0-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "url": "https://chaquo.com/pypi-13.1/soxr/soxr-0.4.0-0-cp313-cp313-android_24_arm64_v8a.whl",
+    "sha256": "0f6b9d83881b854b3c8b199e6ea52b9682d77d57c3e9b4a4455784701b3c2a36"
+  },
+  {
+    "kind": "orbeats",
+    "file": "android-python/OrBeats-098897736e089107704ec1633daff8922087fcc8.zip",
+    "url": "https://codeload.github.com/Wkrotik/OrBeats/zip/098897736e089107704ec1633daff8922087fcc8",
+    "sha256": "5d228442ae106f0f31790dc908c6257ba2bfbbb01b9e15bc5718ef3dd01bdb83"
+  },
+  {
+    "kind": "fsb5",
+    "file": "vorbis-proof/fsb5-1.0.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/35/ae/6c56aa68bd88830b8ce09416455c2e6d135dc62181473b28209f194273d2/fsb5-1.0.tar.gz",
+    "sha256": "312d28b580e9c4a0032caac80bcc354672216327f430d063c3beb4a4f3fe621d"
+  },
+  {
+    "kind": "license",
+    "file": "vorbis-proof/fsb5-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/HearthSim/python-fsb5/5dfa291091a8f0d0b26842cd9ee46cdfe87a6232/LICENSE",
+    "sha256": "1470a02eef9e41fc7b48626069e1c4cbf6dea9a48c06b8d8f6edd56a705e20e3"
+  }
+]

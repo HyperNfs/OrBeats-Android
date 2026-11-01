@@ -1,0 +1,15 @@
+--- UnityPy/files/ObjectReader.py
++++ UnityPy/files/ObjectReader.py
+@@ -201,8 +201,10 @@
+         return getattr(self, key, default)
+ 
+     def __getattr__(self, item: str):
+-        if hasattr(self.reader, item):
+-            return getattr(self.reader, item)
++        reader = self.__dict__.get('reader')
++        if reader is None:
++            raise AttributeError(item)
++        return getattr(reader, item)
+ 
+     def __repr__(self):
+         return "<%s %s>" % (self.__class__.__name__, self.type.name)

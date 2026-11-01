@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Native platform widgets, styled to the Material 3 Expressive visual direction. -->
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#b4df9b</item>
+        <item name="android:colorControlNormal">#b3c1af</item>
+        <item name="android:colorControlActivated">#b4df9b</item>
+        <item name="android:textColorPrimary">#ecf2e8</item>
+        <item name="android:textColorSecondary">#b3c1af</item>
+        <item name="android:colorBackgroundFloating">#19241c</item>
+        <item name="android:dialogCornerRadius">28dp</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowBackground">#101710</item>
+        <item name="android:statusBarColor">#101710</item>
+        <item name="android:navigationBarColor">#19241c</item>
+    </style>
+    <style name="LightTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:colorAccent">#386a20</item>
+        <item name="android:colorControlNormal">#52624f</item>
+        <item name="android:colorControlActivated">#386a20</item>
+        <item name="android:textColorPrimary">#172217</item>
+        <item name="android:textColorSecondary">#52624f</item>
+        <item name="android:colorBackgroundFloating">#eef3e9</item>
+        <item name="android:dialogCornerRadius">28dp</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowBackground">#f7faf2</item>
+        <item name="android:statusBarColor">#f7faf2</item>
+        <item name="android:navigationBarColor">#eef3e9</item>
+    </style>
+</resources>
